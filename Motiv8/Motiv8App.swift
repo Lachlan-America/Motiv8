@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// Wrapper denotes the main entry point of the program
 @main
 struct Motiv8App: App {
     let persistenceController = PersistenceController.shared
