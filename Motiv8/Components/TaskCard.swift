@@ -12,18 +12,12 @@ struct TaskCard: View {
 
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: task.category.iconName)
-                        .font(.title) // controls size
-                        .foregroundColor(.black)
-                        .background(task.category.gradient.clipShape(RoundedRectangle(cornerRadius: 8)))
-                    Text(task.description).font(.headline)
-                }
-                Text(task.category.rawValue.capitalized)
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
+            Image(systemName: task.category.iconName)
+                .font(.title) // controls size
+                .foregroundColor(.black)
+                .background(task.category.gradient.clipShape(RoundedRectangle(cornerRadius: 8)).padding(-10))
+            Spacer()
+            Text(task.description).font(.headline)
             Spacer()
             Button {
                 task.complete()
