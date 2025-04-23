@@ -14,16 +14,27 @@ This app is personal. It’s based on the idea that we grow by doing the uncomfo
 - Basic UI concepts (VStack, HStack, ZStack) and layout management in Swift
 - Local state management and persistent user sessions
 - UX principles for User navigation
+- 'some' keyword can be used to conform to a supertype, without actually specifying the type. E.g. HStack conforms to View but is a subtype. Technically an 'opaque' type
+- Enums aren't just fixed value types like in other languages, but can be treated similarly to structs
+- Enums and structs are value-types, which means functions that change their properties have to have the 'mutating' keyword in front of them
+- Classes can still be used, but structs are thread-safe as they make a literal copy, whereas classes can have race conditions
+- Design choices included the composition of UI and data, because of the DRY principle
+- The use of let and var in different contexts
+- How to define generic types that can be implemented on initialisation
+- AssociatedType is just a defined type that is specified on conformation of a protocol
+- getters and setters to save data in specific cases (can be initialized on use). Furthermore, lazy values can be computed once and then 'cached'
+- switch cases with Sets and can use the where clause to specify conditions
+- Closures to specify anonymous functions, but can contain their own state too
 
 ## 🚧 Roadmap ##
 - [x] Add task page
-- [ ] Add ego HP and visual deterioration of ego
 - [ ] Add default tasks
+- [ ] Add ego HP and visual deterioration of ego
 - [ ] Add navigation bar
-- [ ] Add previous tasks page
+- [ ] Add completed tasks page, you can look up via calendar
 - [ ] Add profile page with XP and metrics
 - [ ] Add journaling and reflection page
-- [ ] Add habit adaptation (increase/decrease difficulty based on user feedback)
+- [ ] Add habit difficulty adaptation (increase/decrease difficulty based on user feedback)
 - [ ] Backend integration for persistent user data
 - [ ] Deploy on App Store
 
