@@ -6,22 +6,22 @@
 //
 import SwiftUI
 
+// Singleton
 struct TaskListView: View {
-    // I created and manage this object?
+    // Persists across redraws; updates based on anything that uses the publishers
     @StateObject private var registry = TaskRegistry()
 
     var body: some View {
-        NavigationStack {
-            List {
-                ForEach(Category.allCases) { category in
-                    Section(header: Text(category.rawValue.capitalized)) {
-                        ForEach(registry.tasksByCategory[category] ?? []) { task in
-                            TaskCard(task: task)
-                        }
-                    }
+        //NavigationStack {
+            LazyVStack(alignment: .center, spacing: 16) {
+                // allCases return all the names of the cases; has to conform to CaseIterable however
+                ForEach(Category.allCases.flatMap { registry.tasksByCategory[$0] ?? [] }) { task in
+                    TaskCard(task: task)
+                    .transition(.move(edge: .trailing))
                 }
-            }
-            .navigationTitle("Exposure Tasks")
-        }
+            }.frame(maxWidth: .infinity)
+            //.animation(.easeInOut, value: registry)
+            //.padding(.horizontal) // Optional for nice side margins
+       // }
     }
 }

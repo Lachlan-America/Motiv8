@@ -22,10 +22,23 @@ struct ContentView: View {
 
     var body: some View {
         // 10 views max - Spacer acts as a view too
-        TaskListView()
+        ZStack{
+            Color(.black).ignoresSafeArea()
+            ScrollView {
+                VStack(spacing: -50) {
+                    EgoView()
+                    TaskListView()
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 70)
+                }
+                .frame(height: 950)
+            }.frame(maxWidth: .infinity)
+        }
     }
 }
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    let ego = EgoModel()
+    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext).environmentObject(ego)
+    
 }

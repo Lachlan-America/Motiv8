@@ -15,6 +15,7 @@ struct Motiv8App: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(EgoModel())
         }
     }
 }
