@@ -10,7 +10,7 @@ This app is personal. It’s based on the idea that we grow by doing the uncomfo
 - Simple checklist interface for building exposure challenges
 - Plans for future habit analytics and authentication (via iCloud or external backend)
 
-## 📚 What I Learned ##
+## 📚 What I've Learned ##
 - Basic UI concepts (VStack, HStack, ZStack) and layout management in Swift
 - Local state management and persistent user sessions
 - UX principles for User navigation
@@ -28,8 +28,8 @@ This app is personal. It’s based on the idea that we grow by doing the uncomfo
 
 ## 🚧 Roadmap ##
 - [x] Add task page
-- [ ] Add default tasks
-- [ ] Add ego HP and visual deterioration of ego
+- [x] Add default tasks
+- [x] Add ego HP and visual deterioration of ego
 - [ ] Add navigation bar
 - [ ] Add completed tasks page, you can look up via calendar
 - [ ] Add profile page with XP and metrics
