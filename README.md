@@ -9,10 +9,11 @@ This app is personal. It’s based on the idea that we grow by doing the uncomfo
 - Visual feedback loop showing ego weakening as habits are completed
 - Simple checklist interface for building exposure challenges
 - Plans for future habit analytics and authentication (via iCloud or external backend)
+
 The ego in its full power:
-![ego_2](https://github.com/user-attachments/assets/31a39509-6791-453b-874a-2d7b43b3bdf3)
+<img src="https://github.com/user-attachments/assets/31a39509-6791-453b-874a-2d7b43b3bdf3" alt="Alt Text" style="width:50%; height:auto;">
 Doing more tasks weakens it as you step foot into your new identity:
-![ego_1](https://github.com/user-attachments/assets/a1e0c228-5a77-4d15-93ab-91bc234b59f6)
+<img src="https://github.com/user-attachments/assets/a1e0c228-5a77-4d15-93ab-91bc234b59f6" alt="Alt Text" style="width:50%; height:auto;">
 
 ## 📚 What I've Learned ##
 - Basic UI concepts (VStack, HStack, ZStack) and layout management in Swift
