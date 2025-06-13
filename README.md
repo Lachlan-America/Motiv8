@@ -10,10 +10,10 @@ This app is personal. It’s based on the idea that we grow by doing the uncomfo
 - Simple checklist interface for building exposure challenges
 - Plans for future habit analytics and authentication (via iCloud or external backend)
 
-The ego in its full power:<br>
-<img src="https://github.com/user-attachments/assets/31a39509-6791-453b-874a-2d7b43b3bdf3" alt="Alt Text" style="width:20%; height:auto;"><br>
-Doing more tasks weakens it as you step foot into your new identity:<br>
-<img src="https://github.com/user-attachments/assets/a1e0c228-5a77-4d15-93ab-91bc234b59f6" alt="Alt Text" style="width:20%; height:auto;">
+The ego in its full power:
+<img src="https://github.com/user-attachments/assets/31a39509-6791-453b-874a-2d7b43b3bdf3" alt="Alt Text" style="width:20%; height:auto; display: block; margin-left: auto; margin-right: auto;">
+Doing more tasks weakens it as you step foot into your new identity:
+<img src="https://github.com/user-attachments/assets/a1e0c228-5a77-4d15-93ab-91bc234b59f6" alt="Alt Text" style="width:20%; height:auto; display: block; margin-left: auto; margin-right: auto;">
 
 ## 📚 What I've Learned ##
 - Basic UI concepts (VStack, HStack, ZStack) and layout management in Swift
